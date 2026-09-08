@@ -1,130 +1,125 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#24689e">
   <title>TradeCraft — Pragmatic AI for the Trades</title>
-  <meta name="description" content="TradeCraft builds pragmatic AI for the trades. Our flagship product, RooferRate, helps homeowners rate and review roofing contractors. RoofGuide helps estimate, scope, and close roof projects." />
+  <meta name="description" content="TradeCraft builds focused AI products that make field work easier and office operations faster. Explore RooferRate and RoofGuide.">
+  <meta property="og:title" content="TradeCraft — Built for the work that matters.">
+  <meta property="og:description" content="Pragmatic AI for the trades. Focused tools. Easier days. Better work.">
+  <meta property="og:url" content="https://tradecrafttechnology.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://tradecrafttechnology.com/assets/social-preview.jpg">
+  <meta property="og:image:alt" content="A sunlit neighborhood seen from a craftsman's workshop, with tools and building plans on the workbench.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231b3027'/%3E%3Cpath d='M17 19h30v7H36v23h-8V26H17z' fill='%23f8f5eb'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <meta property="og:title" content="TradeCraft — Pragmatic AI for the Trades" />
-  <meta property="og:description" content="AI products that deliver real-world results. Our flagship: RooferRate." />
-  <meta property="og:url" content="https://tradecrafttechnology.com/" />
-  <meta property="og:type" content="website" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><rect width='128' height='128' fill='black'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Inter' font-size='84'>T</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/workshop-scene.webp" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/scene.js" defer></script>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "TradeCraft",
-    "url": "https://tradecrafttechnology.com/",
-    "sameAs": ["https://rooferrate.com", "https://roofguide.ai"],
-    "legalName": "TradeCraftAI Inc.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Springtown",
-      "addressRegion": "TX",
-      "postalCode": "76082",
-      "streetAddress": "3370 Texas Highway 199"
-    }
-  }
+    {"@context":"https://schema.org","@type":"Organization","name":"TradeCraft","url":"https://tradecrafttechnology.com/","sameAs":["https://rooferrate.com","https://roofguide.ai"],"legalName":"TradeCraftAI Inc.","address":{"@type":"PostalAddress","addressLocality":"Springtown","addressRegion":"TX","postalCode":"76082","streetAddress":"3370 Texas Highway 199"}}
   </script>
-  <style>
-    html {
-      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
-      scroll-behavior: smooth;
-    }
-  </style>
 </head>
-<body class="bg-neutral-950 text-neutral-100">
-  <!-- Header -->
-  <header class="sticky top-0 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/70 z-40 border-b border-neutral-800">
-    <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-2 font-bold text-xl">
-        <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-white text-black font-extrabold">T</span>
-        <span>TradeCraft</span>
-      </a>
-      <nav class="hidden md:flex items-center gap-6 text-sm text-neutral-300">
-        <a href="#about" class="hover:text-white">About</a>
-        <a href="https://rooferrate.com" class="hover:text-white">RooferRate</a>
-        <a href="https://roofguide.ai" class="hover:text-white">RoofGuide</a>
-        <a href="#contact" class="hover:text-white">Contact</a>
-      </nav>
-      <a href="https://rooferrate.com" class="md:inline-flex hidden px-4 py-2 rounded-xl bg-white text-black font-semibold hover:shadow-lg transition">Visit RooferRate</a>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section class="relative">
-    <div class="mx-auto max-w-6xl px-4 py-20 sm:py-28 text-center">
-      <p class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-neutral-400">Delaware C‑Corp • Founded 2025</p>
-      <h1 class="mt-4 text-4xl sm:text-6xl font-extrabold leading-tight">Pragmatic AI for the Trades</h1>
-      <p class="mt-6 text-lg sm:text-xl text-neutral-300 max-w-2xl mx-auto">We build focused AI products that make field work easier and office ops faster. Our flagship is <a class="underline decoration-neutral-600 hover:text-white" href="https://rooferrate.com">RooferRate</a>.</p>
-      <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-        <a href="https://rooferrate.com" class="px-6 py-3 rounded-xl bg-white text-black font-semibold hover:shadow-lg transition">Go to RooferRate</a>
-        <a href="#contact" class="px-6 py-3 rounded-xl border border-neutral-700 hover:border-neutral-500">Contact TradeCraft</a>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title" data-motion="paused">
+      <div id="hero-scene" class="hero-scene" aria-hidden="true">
+        <div class="scene-world">
+          <div class="sky"></div>
+          <div class="clouds">
+          <div class="cloud-layer cloud-layer--far">
+            <img src="assets/clouds.webp" alt="" width="1536" height="512" decoding="async">
+            <img src="assets/clouds.webp" alt="" width="1536" height="512" decoding="async">
+          </div>
+          <div class="cloud-layer cloud-layer--near">
+            <img src="assets/clouds.webp" alt="" width="1536" height="512" decoding="async">
+            <img src="assets/clouds.webp" alt="" width="1536" height="512" decoding="async">
+          </div>
+          </div>
+          <img id="landscape-image" class="landscape" src="assets/workshop-scene.webp" alt="" width="1672" height="941" fetchpriority="high" decoding="async">
+          <canvas id="breeze-canvas" class="breeze-canvas"></canvas>
+          <div class="scene-detail">
+            <svg class="tablet-trace" viewBox="0 0 1672 941" fill="none" preserveAspectRatio="xMidYMid slice">
+              <path class="tablet-trace__line" d="M1373 635 L1468 584 L1543 651 L1450 640 Z M1468 584 L1450 640 L1373 635 M1383 638 L1377 681 L1509 703 L1526 653 M1450 640 L1441 690" />
+            </svg>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="border-t border-neutral-900">
-    <div class="mx-auto max-w-6xl px-4 py-16 grid md:grid-cols-2 gap-12 items-start">
+      <header class="site-header">
+        <a class="wordmark" href="./" aria-label="TradeCraft home">TradeCraft<span class="wordmark__dot">.</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#products">Our products</a>
+          <a class="nav-about" href="#about">About</a>
+          <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+        </nav>
+      </header>
+      <div class="hero-copy">
+        <p class="eyebrow">Pragmatic AI for the trades</p>
+        <h1 id="hero-title">Built for the work<br>that matters.</h1>
+        <p class="hero-description">Focused tools. Easier days. Better work.</p>
+        <a class="button button--cream" href="#products">Explore our products <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-footer">
+        <a class="scroll-cue" href="#about"><span class="scroll-cue__arrow" aria-hidden="true">↓</span> Made for the real world</a>
+        <button id="motion-toggle" class="motion-toggle" type="button" aria-pressed="false" hidden>
+          <span class="motion-icon" aria-hidden="true"></span>
+          <span data-motion-label>Pause motion</span>
+        </button>
+      </div>
+    </section>
+    <section id="about" class="about-section section-wrap" aria-labelledby="about-title">
       <div>
-        <h2 class="text-2xl font-bold">What we do</h2>
-        <p class="mt-4 text-neutral-300">TradeCraft ships narrow, durable tools—no hype. We combine computer vision, structured data, and LLM workflows to remove friction from estimating, scoping, and closing jobs. First market: roofing.</p>
-        <ul class="mt-4 space-y-2 text-neutral-300 list-disc list-inside">
-          <li>Transparent ratings and reviews for roofing contractors</li>
-          <li>Accurate, transparent estimates for homeowners</li>
-          <li>Faster workflows for contractors & adjusters</li>
-          <li>APIs for partners across the restoration stack</li>
-        </ul>
+        <p class="eyebrow eyebrow--dark">A little less friction</p>
+        <h2 id="about-title">Good tools.<br>Real progress.</h2>
       </div>
-      <div class="space-y-6">
-        <div class="rounded-2xl border border-neutral-800 p-6 bg-neutral-900/30">
-          <h3 class="font-semibold">Flagship: RooferRate</h3>
-          <p class="mt-2 text-neutral-300">Rate and review roofing contractors. Find top-rated roofers with transparent, verified reviews.</p>
-          <a href="https://rooferrate.com" class="mt-4 inline-flex px-4 py-2 rounded-xl bg-white text-black font-semibold">Open RooferRate</a>
+      <div class="about-copy">
+        <p class="intro">The work is real.<br>The tools should be useful.</p>
+        <p>We build focused AI products that make field work easier and office operations faster. Narrow, durable tools that help people estimate, scope, and move jobs forward with confidence.</p>
+        <p class="about-note">Our first market is roofing. Our focus is the people doing the work.</p>
+      </div>
+    </section>
+    <section id="products" class="products-section section-wrap" aria-labelledby="products-title">
+      <div class="section-heading">
+        <p class="eyebrow eyebrow--dark">Tools with a purpose</p>
+        <h2 id="products-title">Meet our products.</h2>
+      </div>
+      <a class="product" href="https://rooferrate.com">
+        <span class="product-number" aria-hidden="true">01</span>
+        <div class="product-name"><span class="product-label">Our flagship</span><h3>RooferRate</h3></div>
+        <p>Find and review roofing contractors. Make your next decision with transparent ratings and verified reviews.</p>
+        <span class="product-arrow" aria-hidden="true">↗</span>
+        <span class="sr-only">Visit RooferRate</span>
+      </a>
+      <a class="product" href="https://roofguide.ai">
+        <span class="product-number" aria-hidden="true">02</span>
+        <div class="product-name"><span class="product-label">Move forward with confidence</span><h3>RoofGuide</h3></div>
+        <p>A simpler way to price roof work, compare bids, and move projects forward with confidence.</p>
+        <span class="product-arrow" aria-hidden="true">↗</span>
+        <span class="sr-only">Visit RoofGuide</span>
+      </a>
+    </section>
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="section-wrap contact-inner">
+        <div><p class="eyebrow">Better work starts with a conversation</p><h2 id="contact-title">Let's build<br>something useful.</h2></div>
+        <div class="contact-links">
+          <a href="mailto:hello@tradecrafttechnology.com">Say hello <span aria-hidden="true">↗</span><span>hello@tradecrafttechnology.com</span></a>
+          <a href="mailto:partners@tradecrafttechnology.com">Media &amp; partnerships <span aria-hidden="true">↗</span><span>partners@tradecrafttechnology.com</span></a>
         </div>
-        <div class="rounded-2xl border border-neutral-800 p-6 bg-neutral-900/30">
-          <h3 class="font-semibold">RoofGuide</h3>
-          <p class="mt-2 text-neutral-300">A simple way to price roof work, compare bids, and move projects forward with confidence.</p>
-          <a href="https://roofguide.ai" class="mt-4 inline-flex px-4 py-2 rounded-xl border border-neutral-700 text-neutral-100 font-semibold hover:border-neutral-500">Open RoofGuide</a>
-        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="border-t border-neutral-900">
-    <div class="mx-auto max-w-6xl px-4 py-16">
-      <h2 class="text-2xl font-bold">Contact</h2>
-      <p class="mt-4 text-neutral-300">Email <a class="underline decoration-neutral-600" href="mailto:hello@tradecrafttechnology.com">hello@tradecrafttechnology.com</a>. Media & partnerships: <a class="underline decoration-neutral-600" href="mailto:partners@tradecrafttechnology.com">partners@tradecrafttechnology.com</a>.</p>
-      <div class="mt-6 text-neutral-400 text-sm">
-        <p>TradeCraftAI Inc. • 3370 Texas Highway 199, Springtown, TX 76082 • EIN 41‑2302102</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="border-t border-neutral-900">
-    <div class="mx-auto max-w-6xl px-4 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-neutral-400">
-      <p>© <span id="y"></span> TradeCraft. All rights reserved.</p>
-      <div class="flex gap-6">
-        <a href="#privacy" class="hover:text-white">Privacy</a>
-        <a href="#terms" class="hover:text-white">Terms</a>
-        <a href="https://rooferrate.com" class="hover:text-white">RooferRate</a>
-        <a href="https://roofguide.ai" class="hover:text-white">RoofGuide</a>
-      </div>
+    </section>
+  </main>
+  <footer class="site-footer section-wrap">
+    <div class="footer-top"><a class="wordmark wordmark--dark" href="./">TradeCraft<span class="wordmark__dot">.</span></a><p>Pragmatic AI for the trades.</p></div>
+    <div class="footer-bottom">
+      <div><p>© <span id="year">2026</span> TradeCraftAI Inc. All rights reserved.</p><p>3370 Texas Highway 199, Springtown, TX 76082</p></div>
+      <div class="legal"><details><summary>Privacy</summary><p>We respect your privacy. We don't collect personal data on this site.</p></details><details><summary>Terms</summary><p>Use at your own risk. All trademarks belong to their owners.</p></details></div>
     </div>
   </footer>
-
-  <!-- Minimal inline sections to satisfy links -->
-  <section id="privacy" class="hidden">We respect your privacy. We don't collect personal data on this site.</section>
-  <section id="terms" class="hidden">Use at your own risk. All trademarks belong to their owners.</section>
-
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
