@@ -150,7 +150,8 @@
           const height = canvas.clientHeight;
           sized = width > 0 && height > 0;
           if (!sized) return;
-          const dpr = Math.min(devicePixelRatio || 1, width < 768 ? 1 : 1.5);
+          // Preserve Retina detail, with a pixel budget for oversized displays.
+          const dpr = Math.min(devicePixelRatio || 1, Math.sqrt(9_000_000 / (width * height)));
           canvas.width = Math.max(1, Math.round(width * dpr));
           canvas.height = Math.max(1, Math.round(height * dpr));
           gl.viewport(0, 0, canvas.width, canvas.height);
